@@ -1,0 +1,24 @@
+ <table class="productTable">
+        <tbody>
+        </tbody>
+    </table>
+
+    <form id= "addForm" method="post">
+    <h2>Agregar Producto</h2>
+    <label for="title">Título:</label>
+    <input type="text" name="title" id="title" required>
+    <label for="description">Descripción:</label>
+    <textarea name="description" id="description" required></textarea>
+    <label for="price">Precio:</label>
+    <input type="number" name="price" id="price" required>
+    <label for="thumbnail">URL de la imagen:</label>
+    <input type="text" name="thumbnail" id="thumbnail" required>
+    <label for="code">Código:</label>
+    <input type="text" name="code" id="code" required>
+    <label for="stock">Stock:</label>
+    <input type="number" name="stock" id="stock" required>
+    <button type="submit">Agregar</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/socketClient.js"></script>
