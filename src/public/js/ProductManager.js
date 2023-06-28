@@ -11,9 +11,15 @@ class ProductManager {
     }
 
     addProduct(title,description,price,thumbnail,code,stock) {
-   
+
+         let newId = this.products.length + 1;
+
+        while (this.products.some(p => p.id === newId)) {
+          newId++;
+        }
+        
         const product = {
-        id: this.idProduct++,
+        id: newId,
         title,
         description,
         price,
